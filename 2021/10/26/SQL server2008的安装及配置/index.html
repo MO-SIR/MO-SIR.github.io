@@ -1,0 +1,183 @@
+
+<!DOCTYPE html>
+<html lang="en" class="loading">
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+    <meta name="viewport" content="width=device-width, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title> - Hexo</title>
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <meta name="google" content="notranslate" />
+    <meta name="keywords" content="Fechin,"> 
+    <meta name="description" content="#SQL Server2008的安装配置最近开始学数据库，有几个同学安装SQL Server2008(我们学校用的是这个版本的)的时候出现了问题，导致无法安装，我也是试着试一下的心态去安装了一下，把,"> 
+    <meta name="author" content="John Doe"> 
+    <link rel="alternative" href="atom.xml" title="Hexo" type="application/atom+xml"> 
+    <link rel="icon" href="/img/favicon.png"> 
+    
+    
+<link rel="stylesheet" href="/css/diaspora.css">
+
+<meta name="generator" content="Hexo 5.4.0"></head>
+
+<body class="loading">
+    <span id="config-title" style="display:none">Hexo</span>
+    <div id="loader"></div>
+    <div id="single">
+    <div id="top" style="display: block;">
+    <div class="bar" style="width: 0;"></div>
+    <a class="iconfont icon-home image-icon" href="javascript:;" data-url="http://example.com"></a>
+    <div title="播放/暂停" class="iconfont icon-play"></div>
+    <h3 class="subtitle"></h3>
+    <div class="social">
+        <div>
+            <div class="share">
+                <a title="获取二维码" class="iconfont icon-scan" href="javascript:;"></a>
+            </div>
+            <div id="qr"></div>
+        </div>
+    </div>
+    <div class="scrollbar"></div>
+</div>
+
+    <div class="section">
+        <div class="article">
+    <div class='main'>
+        <h1 class="title"></h1>
+        <div class="stuff">
+            <span>十月 26, 2021</span>
+            
+
+        </div>
+        <div class="content markdown">
+            <p>#SQL Server2008的安装配置<br>最近开始学数据库，有几个同学安装SQL Server2008(我们学校用的是这个版本的)的时候出现了问题，导致无法安装，我也是试着试一下的心态去安装了一下，把过程记录了下来。</p>
+<p>首先就是要下载好安装包(我直接从我们学校的FTP上下载了)，到官网下载就行，<a target="_blank" rel="noopener" href="http://www.downza.cn/soft/182269.html">http://www.downza.cn/soft/182269.html</a>有资源的兄弟也可以把链接留下</p>
+<p>下载好后直接点击安装程序运行</p>
+<p>打开后直接点击左侧的安装</p>
+<p><img src="https://img-blog.csdnimg.cn/e547f490a6774acaaa4f96ecb3fc97d5.PNG?x-oss-process=image/watermark,type_ZHJvaWRzYW5zZmFsbGJhY2s,shadow_50,text_Q1NETiBA5b-D5py65bCP5YWU,size_20,color_FFFFFF,t_70,g_se,x_16#pic_center" alt="在这里插入图片描述"><br>然后点击第一项“全新安装或向现有安装添加功能”</p>
+<p><img src="https://img-blog.csdnimg.cn/3f38e9a6f4984bffb87c6cd0ac336f3f.PNG?x-oss-process=image/watermark,type_ZHJvaWRzYW5zZmFsbGJhY2s,shadow_50,text_Q1NETiBA5b-D5py65bCP5YWU,size_20,color_FFFFFF,t_70,g_se,x_16#pic_center" alt="在这里插入图片描述"></p>
+<p>而后会跳转到如下画面，点击确定</p>
+<p><img src="https://img-blog.csdnimg.cn/9b6127aefcaa48e09fb76f02595f5c23.PNG?x-oss-process=image/watermark,type_ZHJvaWRzYW5zZmFsbGJhY2s,shadow_50,text_Q1NETiBA5b-D5py65bCP5YWU,size_20,color_FFFFFF,t_70,g_se,x_16#pic_center" alt="在这里插入图片描述"></p>
+<p>有时候会失败，原因也比较多，我试了几次总结了三点：<br>（1）文件路径过长<br>（2）文件名过长<br>（3）需要重启计算机</p>
+<p>不多说，回归正题，点击确定后跳转到如下画面：<br>输入秘钥（我这里直接自动输入了，应该都是一样的），点击下一步</p>
+<p><img src="https://img-blog.csdnimg.cn/e2312be4a80e48a9b099323c4b8480d8.PNG?x-oss-process=image/watermark,type_ZHJvaWRzYW5zZmFsbGJhY2s,shadow_50,text_Q1NETiBA5b-D5py65bCP5YWU,size_20,color_FFFFFF,t_70,g_se,x_16#pic_center" alt="在这里插入图片描述"></p>
+<p>再来到下一个界面，勾选接受条款，点击下一步</p>
+<p><img src="https://img-blog.csdnimg.cn/5566e01440124db5b76578e6af93dd7d.PNG?x-oss-process=image/watermark,type_ZHJvaWRzYW5zZmFsbGJhY2s,shadow_50,text_Q1NETiBA5b-D5py65bCP5YWU,size_20,color_FFFFFF,t_70,g_se,x_16#pic_center" alt="在这里插入图片描述"><br>到这里前奏基本完成，点击安装，等待安装就可以了，过程需要几分钟</p>
+<p><img src="https://img-blog.csdnimg.cn/d2a19b0c93b0479abd10154e1eb6ad12.PNG?x-oss-process=image/watermark,type_ZHJvaWRzYW5zZmFsbGJhY2s,shadow_50,text_Q1NETiBA5b-D5py65bCP5YWU,size_20,color_FFFFFF,t_70,g_se,x_16#pic_center" alt="在这里插入图片描述"></p>
+<p><img src="https://img-blog.csdnimg.cn/802c5889d73d4619bbff1fbc2f809c06.PNG?x-oss-process=image/watermark,type_ZHJvaWRzYW5zZmFsbGJhY2s,shadow_50,text_Q1NETiBA5b-D5py65bCP5YWU,size_20,color_FFFFFF,t_70,g_se,x_16#pic_center" alt="在这里插入图片描述"><br>安装好后直接点击下一步进入安装选项，新手的话建议选择默认所有功能</p>
+<p><img src="https://img-blog.csdnimg.cn/ec002d0560984df3be2d4606741f9410.PNG?x-oss-process=image/watermark,type_ZHJvaWRzYW5zZmFsbGJhY2s,shadow_50,text_Q1NETiBA5b-D5py65bCP5YWU,size_20,color_FFFFFF,t_70,g_se,x_16#pic_center" alt="在这里插入图片描述"><br>下一步也是，默认全选，然后再下一步（精通之后根据自己需要安装就行）</p>
+<p><img src="https://img-blog.csdnimg.cn/44128a5537144191a335b67c6ea0d3a2.PNG?x-oss-process=image/watermark,type_ZHJvaWRzYW5zZmFsbGJhY2s,shadow_50,text_Q1NETiBA5b-D5py65bCP5YWU,size_20,color_FFFFFF,t_70,g_se,x_16#pic_center" alt="在这里插入图片描述"><br>到服务器这一项时，点击红色框框<br><img src="https://img-blog.csdnimg.cn/d1b6f1ff14c446b7a0719c24876442a0.PNG?x-oss-process=image/watermark,type_ZHJvaWRzYW5zZmFsbGJhY2s,shadow_50,text_Q1NETiBA5b-D5py65bCP5YWU,size_20,color_FFFFFF,t_70,g_se,x_16#pic_center" alt="在这里插入图片描述"><br>弹出的对话框里面第一行下拉选择其中一项，确定</p>
+<p><img src="https://img-blog.csdnimg.cn/3582ee5bfbf34c56ac5285c3b831fb3d.PNG?x-oss-process=image/watermark,type_ZHJvaWRzYW5zZmFsbGJhY2s,shadow_50,text_Q1NETiBA5b-D5py65bCP5YWU,size_20,color_FFFFFF,t_70,g_se,x_16#pic_center" alt="在这里插入图片描述"><br>下一步，把刚刚一步的用户添加上去，点击下一步就行</p>
+<p><img src="https://img-blog.csdnimg.cn/c7d4922c6e0445caabb23e57317d99d7.PNG?x-oss-process=image/watermark,type_ZHJvaWRzYW5zZmFsbGJhY2s,shadow_50,text_Q1NETiBA5b-D5py65bCP5YWU,size_20,color_FFFFFF,t_70,g_se,x_16#pic_center" alt="在这里插入图片描述"><br>然后就是继续，默认一直“下一步”就行，一般不会有什么错误</p>
+<p>话说大了，还真跳出错误了，就跟下面大红框圈起来的一样，点击上一步回到Reporting Services配置，选择最下面的仅以文件安装，呃。。。。。其实也不是很懂，跟着提示来就行啦<br><img src="https://img-blog.csdnimg.cn/51e73575a9624c24ae34e9d911d79dde.PNG?x-oss-process=image/watermark,type_ZHJvaWRzYW5zZmFsbGJhY2s,shadow_50,text_Q1NETiBA5b-D5py65bCP5YWU,size_20,color_FFFFFF,t_70,g_se,x_16#pic_center" alt="在这里插入图片描述"><br>然后就是等待安装完成就可以了</p>
+<p><img src="https://img-blog.csdnimg.cn/93a39ec295114f0ab62748a8d102b2bc.PNG?x-oss-process=image/watermark,type_ZHJvaWRzYW5zZmFsbGJhY2s,shadow_50,text_Q1NETiBA5b-D5py65bCP5YWU,size_20,color_FFFFFF,t_70,g_se,x_16#pic_center" alt="在这里插入图片描述"><br>到此即大功告成！手太贱，一下子忘记截图了，如果还遇到什么问题，可以留言一下，一起交流</p>
+
+            <!--[if lt IE 9]><script>document.createElement('audio');</script><![endif]-->
+            <audio id="audio" loop="1" preload="auto" controls="controls" data-autoplay="false">
+                <source type="audio/mpeg" src="">
+            </audio>
+            
+                <ul id="audio-list" style="display:none">
+                    
+                        
+                            <li title='0' data-url='http://link.hhtjim.com/163/425570952.mp3'></li>
+                        
+                    
+                        
+                            <li title='1' data-url='http://link.hhtjim.com/163/425570952.mp3'></li>
+                        
+                    
+                </ul>
+            
+        </div>
+        
+    <div id='gitalk-container' class="comment link"
+		data-enable='false'
+        data-ae='false'
+        data-ci=''
+        data-cs=''
+        data-r=''
+        data-o=''
+        data-a=''
+        data-d='false'
+    >查看评论</div>
+
+
+    </div>
+    
+</div>
+
+
+    </div>
+</div>
+</body>
+
+
+<script src="//lib.baomitu.com/jquery/1.8.3/jquery.min.js"></script>
+<script src="/js/plugin.js"></script>
+<script src="/js/typed.js"></script>
+<script src="/js/diaspora.js"></script>
+
+
+<link rel="stylesheet" href="/photoswipe/photoswipe.css">
+<link rel="stylesheet" href="/photoswipe/default-skin/default-skin.css">
+
+
+<script src="/photoswipe/photoswipe.min.js"></script>
+<script src="/photoswipe/photoswipe-ui-default.min.js"></script>
+
+
+<!-- Root element of PhotoSwipe. Must have class pswp. -->
+<div class="pswp" tabindex="-1" role="dialog" aria-hidden="true">
+    <!-- Background of PhotoSwipe. 
+         It's a separate element as animating opacity is faster than rgba(). -->
+    <div class="pswp__bg"></div>
+    <!-- Slides wrapper with overflow:hidden. -->
+    <div class="pswp__scroll-wrap">
+        <!-- Container that holds slides. 
+            PhotoSwipe keeps only 3 of them in the DOM to save memory.
+            Don't modify these 3 pswp__item elements, data is added later on. -->
+        <div class="pswp__container">
+            <div class="pswp__item"></div>
+            <div class="pswp__item"></div>
+            <div class="pswp__item"></div>
+        </div>
+        <!-- Default (PhotoSwipeUI_Default) interface on top of sliding area. Can be changed. -->
+        <div class="pswp__ui pswp__ui--hidden">
+            <div class="pswp__top-bar">
+                <!--  Controls are self-explanatory. Order can be changed. -->
+                <div class="pswp__counter"></div>
+                <button class="pswp__button pswp__button--close" title="Close (Esc)"></button>
+                <button class="pswp__button pswp__button--share" title="Share"></button>
+                <button class="pswp__button pswp__button--fs" title="Toggle fullscreen"></button>
+                <button class="pswp__button pswp__button--zoom" title="Zoom in/out"></button>
+                <!-- Preloader demo http://codepen.io/dimsemenov/pen/yyBWoR -->
+                <!-- element will get class pswp__preloader--active when preloader is running -->
+                <div class="pswp__preloader">
+                    <div class="pswp__preloader__icn">
+                      <div class="pswp__preloader__cut">
+                        <div class="pswp__preloader__donut"></div>
+                      </div>
+                    </div>
+                </div>
+            </div>
+            <div class="pswp__share-modal pswp__share-modal--hidden pswp__single-tap">
+                <div class="pswp__share-tooltip"></div> 
+            </div>
+            <button class="pswp__button pswp__button--arrow--left" title="Previous (arrow left)">
+            </button>
+            <button class="pswp__button pswp__button--arrow--right" title="Next (arrow right)">
+            </button>
+            <div class="pswp__caption">
+                <div class="pswp__caption__center"></div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+
+
+
+</html>
